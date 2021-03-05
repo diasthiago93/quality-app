@@ -3,10 +3,10 @@
 
 ## Instalação
 Para instalar os pacotes utilize:
-### `yarn` ou ### `npm install`
+### `yarn` ou  `npm install`
 
 Para execultar o projeto utilize:
-### `yarn start` ou ### `npm run start`
+### `yarn start` ou  `npm run start`
 
 ## Exemplo de uso
 
