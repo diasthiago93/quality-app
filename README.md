@@ -11,7 +11,7 @@ Para execultar o projeto utilize:
 ## Exemplo de uso
 
 Executa o aplicativo no modo de desenvolvimento.
-Abra [http://localhost:3000] (http://localhost:3000) para visualizá-lo no navegador.
+Abra (http://localhost:3000) para visualizá-lo no navegador.
 
 Email: teste@teste.com.br
 Senha: 123
