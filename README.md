@@ -1,5 +1,8 @@
 # React App
-> Projeto React, utilizando o conceito de Context API.
+> Projeto React, utilizando o conceito de Context API. 
+
+## Exemplo:
+https://sleepy-shockley-0c76fd.netlify.app/
 
 ## Instalação
 Para instalar os pacotes utilize:
