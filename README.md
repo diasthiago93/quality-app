@@ -1,10 +1,5 @@
-# Nome do produto
+# React App
 > Projeto React, utilizando o conceito de Context API.
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 
 ## Instalação
 Para instalar os pacotes utilize:
