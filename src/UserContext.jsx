@@ -5,7 +5,7 @@ export const UserContext = createContext();
 
 export const UserStorage = ({ children }) => {
   const [data, setData] = useState(null);
-  const [login, setLogin] = useState(null);
+  const [login, setLogin] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
@@ -42,10 +42,15 @@ export const UserStorage = ({ children }) => {
         },
       });
       if (!response.ok) {
-        throw new Error(`Error Usuário Inválido`);
+        throw new Error(`Usuário Inválido`);
       }
       const json = await response.json();
-      const result = json.find((user) => user.email === "teste@teste.com.br");
+      const result = json.find(
+        (user) => user.email === email && user.password === password
+      );
+      if (!result) {
+        throw new Error(`Usuário Inválido`);
+      }
       setData(result);
       setLogin(true);
       window.localStorage.setItem("token", result.id);

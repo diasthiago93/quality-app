@@ -3,6 +3,7 @@ import Login from "./Components/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import User from "./Components/User";
 import { UserStorage } from "./UserContext";
+import PrivateRouter from "./Components/Helper/PrivateRouter";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <UserStorage>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="conta" element={<User />} />
+          <PrivateRouter path="conta" element={<User />} />
         </Routes>
       </UserStorage>
     </BrowserRouter>
